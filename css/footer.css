@@ -91,3 +91,43 @@
         font-size: 14px;
     }
 }
+
+
+@media only screen and (max-width:420px) {
+    .footer-top .footer-logo a {
+        gap: 5px;
+    }
+    .footer-top .footer-logo img {
+        width: 20px;
+    }
+    .footer-top .footer-logo .footer-logo-text {
+        font-size: 18px;
+    }
+    .footer-top .footer-link-icons {
+        gap: 10px;
+    }
+    .footer-top .footer-link-icons a i {
+        font-size: 18px;
+    }
+    .footer-table {
+        padding: 20px 0;
+    }
+
+    .footer-table th {
+        font-size: 12px;
+    }
+    .footer-table th:nth-child(3),
+    .footer-table th:nth-child(4) {
+        display: none;
+    }
+
+    .footer-table td {
+        font-size: 12px;
+    }
+    
+    .footer-table td:nth-child(3),
+    .footer-table td:nth-child(4) {
+        font-size: 12px;
+        display: none;
+    }
+}

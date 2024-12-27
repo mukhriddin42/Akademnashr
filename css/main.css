@@ -241,7 +241,6 @@
     }
     .discounts .dicounts-left-text {
         width: 500px;
-        border: 1px solid green;
     }
     .discounts .dicounts-left-text .home-page__title {
         font-size: 28px;
@@ -262,20 +261,53 @@
 /* widthi 425px gacha bo'lgan devicelar */
 @media only screen and (max-width:420px) {
     /* Homepage section */
+    .home-page {
+        height: 300px;
+    }
     .home-page__left-text {
-        width: 400px;
-        border: 1px solid red;
+        width: 300px;
+    }
+    .home-page__left-text .horizantal-line {
+        display: none;
     }
     .home-page__left-text .home-page__title {
-        padding-top: 20px;
-        font-size: 28px;
+        padding-top: 10px;
+        font-size: 24px;
+        margin: 0 auto;
+        text-align: center;
     }
     .home-page__left-text .home-page__subtitle {
         padding-top: 20px;
-        font-size: 16px;
+        font-size: 14px;
+        margin: 0 auto;
+        text-align: center;
     }
     .home-page__left-text .main-btn {
-        margin-top: 20px;
-        padding: 6px 20px;
+        display:block;
+        margin: 15px auto;
+        text-align: center;
+        padding: 6px 16px;
+    }
+    
+    /* Adirtasiment */
+    .adv {
+        padding: 30px 0;
+    }
+    .adv .horizantal-line {
+        display: none;
+    }
+    .adv .home-page__title {
+        font-size: 24px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .adv .adv-items {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .adv .adv-items .item {
+        width: 270px;
     }
 }
