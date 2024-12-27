@@ -1,0 +1,281 @@
+.home-page {
+    background-color: var(--dark_bg);
+    height: 420px;
+    margin-top: 15px;
+    padding: 60px 0;
+}
+
+.home-page-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-page__left-text {
+    width: 500px;
+}
+.home-page__left-text .home-page__title {
+    font-size: 36px;
+    color: #fff;
+    width: 70%;
+    padding-top: 30px;
+}
+
+.home-page__left-text .home-page__subtitle {
+    color: #fff;
+    width: 70%;
+    padding-top: 30px;
+}
+
+.home-page__left-text .main-btn {
+    margin-top: 30px;
+}
+
+.home-page__right-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 15px 15px var(--shadow_color);
+    position: absolute;
+    right: 230px;
+}
+
+.home-page__right-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Advertisement section style */
+.adv {
+    padding: 150px 0;
+}
+
+.adv .home-page__title {
+    font-size: 36px;
+    width: 35%;
+    padding-top: 20px;
+}
+
+.adv-items {
+    padding: 30px 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.adv-items .item {
+    width: 30%;
+}
+
+.adv-items .item .logo-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ff770048;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adv-items .item .logo-box img {
+    width: 40%;
+}
+
+.adv-items .item .item-title {
+    padding-top: 15px;
+}
+
+.adv-items .item .item-subtitle {
+    padding-top: 15px;
+}
+
+
+/* Discounts section */
+.discounts {
+    padding: 60px 50px;
+    margin: 80px 0;
+    border-radius: 12px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.discounts .dicounts-left-text {
+    width: 450px;
+}
+
+.discounts .dicounts-left-text .home-page__title {
+    font-size: 36px;
+    width: 70%;
+    color: #fff;
+}
+.discounts .dicounts-left-text .home-page__subtitle {
+    padding-top: 20px;
+    width: 80%;
+    color: #fff;
+}
+.discounts .dicounts-left-text .main-btn {
+    margin-top: 20px;
+}
+
+.discounts .discounts-right-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 12px;
+    position: absolute;
+    right: 60px;
+    bottom: 50px;
+}
+
+.discounts .discounts-right-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+
+
+
+/* Respnsibilty */
+
+/*widthi 1024px gacha bo'lgan ekranlarda */
+@media only screen and (max-width: 1024px) {
+    .home-page {
+        height: 390px;
+    }
+    .home-page__right-image {
+        width: 350px;
+        height: 350px;
+        right: 50px;
+    }
+}
+
+/* widthi 768px gacha bo'lgan ekralnlarda */
+@media only screen and (max-width:768px) {
+    .home-page {
+        height: 375px;
+        margin-top: 10px;
+        padding: 40px 0;
+    }
+    .home-page__left-text {
+        width: 420px;
+    }
+    .home-page__left-text .home-page__title {
+        padding-top: 20px;
+        font-size: 28px;
+    }
+    .home-page__left-text .home-page__subtitle {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+    .home-page__left-text .main-btn {
+        margin-top: 20px;
+        padding: 6px 20px;
+    }
+    .home-page__right-image {
+        width: 300px;
+        height: 300px;
+        right: 50px;
+    }
+
+    .adv .home-page__title {
+        font-size: 28px;
+    }
+    .adv-items .item .logo-box {
+        width: 45px;
+        height: 45px;
+    }
+    .adv-items .item .item-subtitle {
+        font-size: 16px;
+    }
+    /* Discounts  */
+    .discounts {
+        padding: 40px 30px;
+        margin: 60px 0;
+    }
+    .discounts .dicounts-left-text {
+        width: 370px;
+    }
+    .discounts .dicounts-left-text .home-page__title {
+        font-size: 28px;
+    }
+    .discounts .dicounts-left-text .home-page__subtitle {
+        font-size: 16px;
+    }
+    .discounts .dicounts-left-text .main-btn {
+        margin-top: 20px;
+    }
+    .discounts .discounts-right-image {
+        width: 270px;
+        height: 270px;
+    }
+}
+
+/* widthi 576px gacha bo'lgan devicelar */
+@media only screen and (max-width:576px) {
+    .home-page {
+        height: 300px;
+    }
+    .home-page-content {
+        flex-direction: column;
+    }
+    .home-page__left-text {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .home-page__right-image {
+        position: relative;
+        display: none;
+    }
+
+    /* Adirtasiment */
+    .adv {
+        padding: 50px 0;
+    }
+
+    /* Discounts */
+    .discounts {
+        padding: 40px 30px;
+    }
+    .discounts .dicounts-left-text {
+        width: 500px;
+        border: 1px solid green;
+    }
+    .discounts .dicounts-left-text .home-page__title {
+        font-size: 28px;
+    }
+    .discounts .dicounts-left-text .home-page__subtitle {
+        font-size: 16px;
+    }
+    .discounts .dicounts-left-text .main-btn {
+        margin-top: 20px;
+        font-weight:400;
+    }
+    .discounts .discounts-right-image {
+        display: none;
+    }
+}
+
+
+/* widthi 425px gacha bo'lgan devicelar */
+@media only screen and (max-width:420px) {
+    /* Homepage section */
+    .home-page__left-text {
+        width: 400px;
+        border: 1px solid red;
+    }
+    .home-page__left-text .home-page__title {
+        padding-top: 20px;
+        font-size: 28px;
+    }
+    .home-page__left-text .home-page__subtitle {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+    .home-page__left-text .main-btn {
+        margin-top: 20px;
+        padding: 6px 20px;
+    }
+}

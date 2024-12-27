@@ -1,0 +1,93 @@
+/* Footer section */
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 15px 0;
+    border-bottom: 3px solid var(--dark_bg);
+}
+
+.footer-top .footer-logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-top .footer-logo img {
+    width: 35px;
+}
+.footer-top .footer-logo .footer-logo-text {
+    font-size: 26px;
+    color: var(--dark_bg);
+}
+.footer-top .footer-logo .footer-logo-text span {
+    color: var(--main_color);
+}
+.footer-top .footer-link-icons {
+    display: flex;
+    gap: 15px;
+}
+.footer-top .footer-link-icons a i {
+    font-size: 26px;
+    color: var(--dark_bg);
+    transition: all .5s;
+}
+.footer-top .footer-link-icons a:hover i {
+    color: var(--main_color);
+}
+
+.footer-table {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.footer-table th {
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.footer-table td {
+    text-align: left;
+    padding-bottom: 10px;
+    color: var(--dark_bg);
+}
+
+/* widthi 1024px gacha bo'lgan devicelar  */
+/* bunga shartmas ekan  */
+@media only screen and (max-width:1024px) {
+    
+}
+
+
+
+/* widthi 768px gacha bo'lgan devicelar  */
+@media only screen and (max-width:768px) {
+    .footer-top .footer-logo a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .footer-top .footer-logo img {
+        width: 25px;
+    }
+    .footer-top .footer-logo .footer-logo-text {
+        font-size: 22px;
+    }
+    .footer-top .footer-link-icons {
+        gap: 10px;
+    }
+    .footer-top .footer-link-icons a i {
+        font-size: 22px;
+    }
+    .footer-table {
+        padding: 30px 0;
+    }
+
+    .footer-table th {
+        font-size: 14px;
+    }
+
+    .footer-table td {
+        font-size: 14px;
+    }
+}

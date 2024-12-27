@@ -1,0 +1,130 @@
+.main-header {
+    border-top: 4px solid var(--main_color);
+    padding-top: 15px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .navbar-logo a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.navbar .navbar-logo img {
+    width: 35px;
+}
+.navbar .navbar-logo .navbar-logo-text {
+    font-size: 26px;
+    color: var(--dark_bg);
+}
+.navbar .navbar-logo .navbar-logo-text span {
+    color: var(--main_color);
+}
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navbar .navbar-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navbar-nav ul li a {
+    color: var(--dark_bg);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.navbar-nav ul li {
+    position: relative;
+}
+
+.navbar-nav .horizantal-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    opacity: 0;
+    transform: skewX(0);
+    transition: all .6s ease-in-out;
+}
+
+.navbar-nav li:hover .horizantal-line{
+    opacity: 1;
+    transform: skewX(100%   );
+}
+
+/* Navbar-burger-menu */
+.navbar-burger-menu .burger-menu {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--main_color);
+    display: none;
+}
+
+
+/* Respnsibilty */
+
+/*widthi 1024px gacha bo'lgan ekranlarda */
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 980px;
+    }
+}
+
+
+/* widthi 768px gacha bo'lgan ekranlarda */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .navbar .navbar-logo a {
+        gap: 3px;
+    }
+    .navbar .navbar-logo img {
+        width: 25px;
+    }
+    .navbar .navbar-logo .navbar-logo-text {
+        font-size: 20px;
+    }
+    .navbar .navbar-nav {
+        gap: 15px;
+    }
+    .navbar .navbar-nav ul {
+        display: none;
+    }
+    .navbar .navbar-nav .login-btn {
+        padding: 6px 20px;
+    }
+    .navbar-burger-menu .burger-menu {
+        display: inline-block;
+    }
+}
+
+
+/* widthi 576px gacha bo'lgan devicelarda */
+@media only screen and (max-width:576px) {
+    .container {
+        max-width: 560px;
+    }
+    .navbar .navbar-nav .login-btn {
+        display: none;
+    }
+}
+
+
+/* widthi 425px gacha bo'lgan devicelarda */
+@media only screen and (max-width:420px) {
+    .container {
+        max-width: 420px;
+    }
+}
